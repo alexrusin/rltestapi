@@ -50,7 +50,7 @@
 			}
 
 			$scope.createShareLinks = function(percentage){
-				var url = 'http://codifydesign.com';
+				var url = 'https://rusin-barqz.herokuapp.com';
 				var emailLink = '<a class="btn email" href="mailto:?subject=Try to beat my quiz score!&amp;body=I scored '+percentage+'% on this quiz. Try to beat my score at '+url+'">Email a freind</a>';
 				var twitterLink = '<a class="btn twitter" target = "_blank" href="http://twitter.com/share?text=I scored '+percentage+' on this quiz. Try to beat my score at&hashTags=BarQuiz&url='+url+'">Tweet your score</a>';
 				
