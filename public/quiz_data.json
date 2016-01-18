@@ -45,5 +45,29 @@
 		],
 		"correct":3
 
+	},
+	{
+		"question": "Our well vodka is Absolut",
+		"answers": [
+			{ "id":0, "text": "True"},
+			{ "id":1, "text": "False"}
+			
+		],
+		"correct":1,
+		"feedback":"Our well vodka is Smirnoff"
+
+	},
+	{
+		"question": "Alotta Colada is served with a sidecar of _____ ",
+		"answers": [
+			{ "id":0, "text": "Southern Comfort"},
+			{ "id":1, "text": "Disarono Amaretto"},
+			{ "id":2, "text": "Captain Morgan Spiced Rum"},
+			{ "id":3, "text": "Grand Marnier"}
+			
+		],
+		"correct":2,
+		"feedback":"Alotta Colada is served with sidecar of Captain Morgan Spiced Rum"
+
 	}
 ]
