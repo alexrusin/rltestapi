@@ -8,15 +8,39 @@
 
 		],
 		"correct":2,
-		"feedback" : "Wines with similar flavors are listed in a simple sequence, starting with those that are sweeter and very mild in taste, progressing to the wines that are drier and stronger in taste"
+		"feedback" : "Wine is listed in sequential order starting with the sweetest and most mild wine progressing to the fuller and drier in taste wines."
 	},
 	{
-		"question": "What question(s) would you ask a guest who orders a martini?",
+		"question": "What question would you ask a guest who orders a martini?",
 		"answers": [
 			{ "id":0, "text": "Gin or vodka?"},
 			{ "id":1, "text": "Up or on the rocks?"},
 			{ "id":2, "text": "Olives or lemon twist?"},
 			{ "id":3, "text": "All of the above"}
+
+		],
+		"correct":3
+
+	},
+	{
+		"question": "A frozen blend of tropical fruit flavors mixed with Captain Morgan Original Spiced Rum and topped with a splash of Bacardi Black rum.",
+		"answers": [
+			{ "id":0, "text": "Berry Mango Daiquiri"},
+			{ "id":1, "text": "Bahama Mama"},
+			{ "id":2, "text": "Pina Colada"},
+			{ "id":3, "text": "Mudslide"}
+
+		],
+		"correct":1
+
+	},
+	{
+		"question": "Light to medium-bodied wine with flavors of lime, green apple, passion fruit and white peach",
+		"answers": [
+			{ "id":0, "text": "Chardonnay"},
+			{ "id":1, "text": "Merlot"},
+			{ "id":2, "text": "Riesling"},
+			{ "id":3, "text": "Sauvignon Blanc"}
 
 		],
 		"correct":3
