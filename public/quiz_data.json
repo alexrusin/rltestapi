@@ -69,5 +69,17 @@
 		"correct":2,
 		"feedback":"Alotta Colada is served with sidecar of Captain Morgan Spiced Rum"
 
+	},
+	{
+		"question": "What is true about red and white Zinfandels?",
+		"answers": [
+			{ "id":0, "text": "White Zinfandel wine has a pale rose color, while a red Zinfandel has a deep red, almost black color"},
+			{ "id":1, "text": "A white Zinfandel's flavor is very sweet, while a red Zinfandel's flavor is spicy and peppery"},
+			{ "id":2, "text": "Made from Zinfandel grape"},
+			{ "id":3, "text": "All of the above"}
+			
+		],
+		"correct":3
+		
 	}
 ]

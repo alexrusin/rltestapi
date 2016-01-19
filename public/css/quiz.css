@@ -260,14 +260,14 @@ body {
 @media screen and (max-width: 650px){
 	body {padding: 0px; margin: 0px;}
 	#myQuiz{width:320px; background-size: 320px auto;}
-	#myQuiz h1 {width:300px; font-size: 1.3em; top: 25px; left: 25px;}
-	#myQuiz h1 span {line-height: 43px;}
+	#myQuiz h1 {width:300px; font-size: 1.3em; top: 15px; left: 25px;}
+	#myQuiz h1 span {line-height: 25px; font-size: 1.7em;}
 	#myQuiz h2 {margin: 0px;}
 	#myQuiz h3 {font-size: 2.2em; margin-bottom: 15px;}
 
-	#myQuiz .progress {width: 300px; top: 110px; left: 25px;}
-	#myQuiz .progress div {width: 25px; height: 25px; margin-right: 20px;}
-	#myQuiz .progress div::after { top: -30px; width: 53px; height: 33px;}
+	#myQuiz .progress {width: 300px; top: 80px; left: 25px;}
+	#myQuiz .progress div {width: 20px; height: 20px; margin-right: 20px;}
+	#myQuiz .progress div::after { top: -30px; width: 40px; height: 28px;}
 	#myQuiz .intro {width: 300px; top: 135px; left:330px;}
 
 	#myQuiz .question {width: 300px; top: 135px; left: 330px;}
