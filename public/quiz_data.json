@@ -81,5 +81,29 @@
 		],
 		"correct":3
 		
+	},
+	{
+		"question": "We have the following IPA(s)",
+		"answers": [
+			{ "id":0, "text": "Lagunitas"},
+			{ "id":1, "text": "Stone"},
+			{ "id":2, "text": "Ballast Point"},
+			{ "id":3, "text": "All of the above"}
+			
+		],
+		"correct":0
+		
+	},
+	{
+		"question": "Our sparkling wine(s) are?",
+		"answers": [
+			{ "id":0, "text": "Lambrusco"},
+			{ "id":1, "text": "La Marca"},
+			{ "id":2, "text": "Corbel Brut"},
+			{ "id":3, "text": "All of the above"}
+			
+		],
+		"correct":1
+		
 	}
 ]
