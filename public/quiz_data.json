@@ -138,7 +138,40 @@
 			
 		],
 		"correct":1,
-		"feedback":"Shrimp Wreck Mary is made with Absolut vodka and garnished with coctail shrip.  It is a great upsell for Blody Mary!"
+		"feedback":"Shrimp Wreck Mary is made with Absolut vodka and garnished with a coctail shrip.  It is a great upsell for Blody Mary!"
 		
+	},
+	{
+		"question": "If a guest orders a non-alcoholic beer and looks under age of 30, you should still card him/her",
+		"answers": [
+			{ "id":0, "text": "True"},
+			{ "id":1, "text": "False"}
+			
+		],
+		"correct":0,
+		"feedback":"Non-alcoholic beer contains at most 0.5% ABV and is illegal for a minor to drink"
+		
+	},
+	{
+		"question": "Malibu mango rum with tropical fruit juices and sweet grenadine",
+		"answers": [
+			{ "id":0, "text": "Malibu Hurricane"},
+			{ "id":1, "text": "Mango Mai Tai"},
+			{ "id":2, "text": "Mojito"},
+			{ "id":3, "text": "Manhattan"}
+			
+		],
+		"correct":1		
+	},
+	{
+		"question": "How many ounces of raspberry puree does raspberry ice tea get?",
+		"answers": [
+			{ "id":0, "text": "1 oz"},
+			{ "id":1, "text": "2 oz"},
+			{ "id":2, "text": "3 oz"},
+			{ "id":3, "text": "4 oz"}
+			
+		],
+		"correct":1		
 	}
 ]
