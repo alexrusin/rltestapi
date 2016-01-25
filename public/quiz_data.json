@@ -105,5 +105,40 @@
 		],
 		"correct":1
 		
+	},
+	{
+		"question": "Malibu Red, pinapple juice, mango passion fruit mix topped with Bacardi Black Rum",
+		"answers": [
+			{ "id":0, "text": "Mai Tai"},
+			{ "id":1, "text": "High Tide"},
+			{ "id":2, "text": "Lobster Punch"},
+			{ "id":3, "text": "Red Lobster Sunset"}
+			
+		],
+		"correct":2
+		
+	},
+	{
+		"question": "Our house Chardonnay is ______",
+		"answers": [
+			{ "id":0, "text": "SeaGlass Unoaked"},
+			{ "id":1, "text": "Kendal-Jackson"},
+			{ "id":2, "text": "La Crema"},
+			{ "id":3, "text": "Sutter Home"}
+			
+		],
+		"correct":3
+		
+	},
+	{
+		"question": "The recent Core Menu change discontinued Shrimp Wreck Mary drink because we do not carry Stoli vodka anymore",
+		"answers": [
+			{ "id":0, "text": "True"},
+			{ "id":1, "text": "False"}
+			
+		],
+		"correct":1,
+		"feedback":"Shrimp Wreck Mary is made with Absolut vodka and garnished with coctail shrip.  It is a great upsell for Blody Mary!"
+		
 	}
 ]
