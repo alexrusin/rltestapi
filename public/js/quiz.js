@@ -1,7 +1,7 @@
 (function(){
 
 	var app = angular.module('myQuiz',[]);
-	app.controller('QuizController', ['$scope', '$http', '$sce', function($scope, $http, $sce){
+	app.controller('QuizController', ['$scope', '$http', '$sce', '$window', function($scope, $http, $sce, $window){
 
 			$scope.score = 0;
 			$scope.activeQuestion = -1;
@@ -51,15 +51,20 @@
 			}
 
 			$scope.createShareLinks = function(percentage){
-				var url = 'https://rusin-barqz.herokuapp.com';
-				var emailLink = '<a class="btn email" href="mailto:?subject=Try to beat my quiz score!&amp;body=I scored '+percentage+'% on this quiz. Try to beat my score at '+url+'">Email a freind</a>';
+				var url = 'http://rusin-barqz.herokuapp.com/';
+				var emailLink = '<a class="btn email" href="mailto:?subject=Try to beat my quiz score!&amp;body=I scored '+percentage+'% on this quiz. Try to beat my score at '+url+'">Email</a>';
 				var twitterLink = '<a class="btn twitter" target = "_blank" href="http://twitter.com/share?text=I scored '+percentage+' on this quiz. Try to beat my score at&hashTags=BarQuiz&url='+url+'">Tweet your score</a>';
-				
-				var newMarkup = emailLink + twitterLink;
+				var facebookLink = '<a class="btn facebook" target = "_blank" href="https://www.facebook.com/sharer/sharer.php?u='+url+'">Share on Facebook</a>';;
+				var newMarkup = emailLink + twitterLink + facebookLink;
 
 				return $sce.trustAsHtml(newMarkup);
 
 			}	
+
+			$scope.retakeQuiz = function(){
+				$window.location.reload();
+				
+			}
 
 			function shuffleSlice(array) {
   				var currentIndex = array.length, temporaryValue, randomIndex;

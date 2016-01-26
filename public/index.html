@@ -42,7 +42,7 @@
 				
 				<div class="feedback">
 					<p ng-show="myQuestion.correctness === 'correct'">You are <strong>correct</strong></p>
-					<p ng-show="myQuestion.correctness === 'incorrect'">Sorry, that is not correct</p>
+					<p ng-show="myQuestion.correctness === 'incorrect'">Sorry, that is <strong>not correct</strong></p>
 					<p>{{myQuestion.feedback}}</p>
 					<div class="btn" ng-click = "selectContinue()">Continue</div>
 				</div>
@@ -52,6 +52,8 @@
 				<p>You scored {{percentage}}% by correctly answering {{score}} of total {{totalQuestions}} questions</p>
 				<p>Use the links below to challenge your friends</p>
 				<div class="share" ng-bind-html="createShareLinks(percentage)"></div>
+
+				<p class="btn" ng-click="retakeQuiz()">Re-take Quiz</p>
 
 			</div>
 
