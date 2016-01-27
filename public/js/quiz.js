@@ -52,10 +52,10 @@
 
 			$scope.createShareLinks = function(percentage){
 				var url = 'http://rusin-barqz.herokuapp.com/';
-				var emailLink = '<a class="btn email" href="mailto:?subject=Try to beat my quiz score!&amp;body=I scored '+percentage+'% on this quiz. Try to beat my score at '+url+'">Email</a>';
+				//var emailLink = '<a class="btn email" href="mailto:?subject=Try to beat my quiz score!&amp;body=I scored '+percentage+'% on this quiz. Try to beat my score at '+url+'">Email</a>';
 				var twitterLink = '<a class="btn twitter" target = "_blank" href="http://twitter.com/share?text=I scored '+percentage+' on this quiz. Try to beat my score at&hashTags=BarQuiz&url='+url+'">Tweet your score</a>';
 				var facebookLink = '<a class="btn facebook" target = "_blank" href="https://www.facebook.com/sharer/sharer.php?u='+url+'">Share on Facebook</a>';;
-				var newMarkup = emailLink + twitterLink + facebookLink;
+				var newMarkup = twitterLink + facebookLink;
 
 				return $sce.trustAsHtml(newMarkup);
 
@@ -82,7 +82,7 @@
 			    array[randomIndex] = temporaryValue;
 			  	}
 
-			  return array.slice(0, 14);
+			  return array.slice(0, 20);
 			}
 
 

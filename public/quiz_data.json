@@ -35,7 +35,7 @@
 
 	},
 	{
-		"question": "Light to medium-bodied wine with flavors of lime, green apple, passion fruit and white peach",
+		"question": "Light to medium-bodied white wine with flavors of lime, green apple, passion fruit and white peach",
 		"answers": [
 			{ "id":0, "text": "Chardonnay"},
 			{ "id":1, "text": "Merlot"},
@@ -107,7 +107,7 @@
 		
 	},
 	{
-		"question": "Malibu Red, pinapple juice, mango passion fruit mix topped with Bacardi Black Rum.",
+		"question": "A refreshing combination of Malibu Red, pinapple juice, mango passion fruit mix topped with Bacardi Black Rum.",
 		"answers": [
 			{ "id":0, "text": "Mai Tai"},
 			{ "id":1, "text": "High Tide"},
@@ -116,6 +116,18 @@
 			
 		],
 		"correct":2
+		
+	},
+	{
+		"question": "A refreshing blend of Smirnoff vodka, pureed raspberries, ginger ale and citrus juices.",
+		"answers": [
+			{ "id":0, "text": "Mango Mai Tai"},
+			{ "id":1, "text": "Red Lobster Sunset"},
+			{ "id":2, "text": "Lobster Punch"},
+			{ "id":3, "text": "Malibu Hurricane"}
+			
+		],
+		"correct":1
 		
 	},
 	{
@@ -164,15 +176,15 @@
 		"correct":1		
 	},
 	{
-		"question": "How many ounces of raspberry puree does raspberry ice tea get?",
+		"question": "How many ounces of raspberry puree does raspberry Boston ice tea get?",
 		"answers": [
-			{ "id":0, "text": "1 oz"},
-			{ "id":1, "text": "2 oz"},
-			{ "id":2, "text": "3 oz"},
-			{ "id":3, "text": "4 oz"}
+			{ "id":0, "text": "2 oz"},
+			{ "id":1, "text": "3 oz"},
+			{ "id":2, "text": "4 oz"},
+			{ "id":3, "text": "5 oz"}
 			
 		],
-		"correct":1
+		"correct":0
 	},
 	{
 		"question": "Can we make Moscow Mule?",
@@ -194,5 +206,38 @@
 			
 		],
 		"correct":3
+	},
+	{
+		"question": "How many ounces of cranberry juice does cranberry Boston ice tea get?",
+		"answers": [
+			{ "id":0, "text": "2 oz"},
+			{ "id":1, "text": "3 oz"},
+			{ "id":2, "text": "4 oz"},
+			{ "id":3, "text": "5 oz"}
+			
+		],
+		"correct":3
+	},
+	{
+		"question": "Full-bodied red wine with fruit flavors of black cherry, black currant and blackberry",
+		"answers": [
+			{ "id":0, "text": "Chardonnay"},
+			{ "id":1, "text": "Merlot"},
+			{ "id":2, "text": "Cabernet Sauvignon"},
+			{ "id":3, "text": "Sauvignon Blanc"}
+
+		],
+		"correct":2
+
+	},
+	{
+		"question": "Carmel Appletini is a great upsell to a regular Appletini",
+		"answers": [
+			{ "id":0, "text": "True"},
+			{ "id":1, "text": "False"}
+			
+		],
+		"correct":0,
+		"feedback":"It is made with Absolut vodka, DeKuyper Apple Pucker and a hint of citrus swirled with caramel"
 	}
 ]
