@@ -150,7 +150,7 @@
 			
 		],
 		"correct":1,
-		"feedback":"Shrimp Wreck Mary is made with Absolut vodka and garnished with a coctail shrip.  It is a great upsell for Blody Mary!"
+		"feedback":"Shrimp Wreck Mary is made with Absolut vodka and garnished with a coctail shrip.  It is a great upsell for Bloody Mary!"
 		
 	},
 	{
@@ -231,7 +231,7 @@
 
 	},
 	{
-		"question": "Carmel Appletini is a great upsell to a regular Appletini",
+		"question": "Carmel Appletini is a great upsell for a regular Appletini",
 		"answers": [
 			{ "id":0, "text": "True"},
 			{ "id":1, "text": "False"}
@@ -239,5 +239,14 @@
 		],
 		"correct":0,
 		"feedback":"It is made with Absolut vodka, DeKuyper Apple Pucker and a hint of citrus swirled with caramel"
+	},
+	{
+		"question": "Big Berry Daiquiri is a _______",
+		"answers": [
+			{ "id":0, "text": "Jumbo Berry Mango Daiquiri"},
+			{ "id":1, "text": "Jumbo Strawberry Daiquiri"}
+			
+		],
+		"correct":1
 	}
 ]
