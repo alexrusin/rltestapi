@@ -35,7 +35,6 @@ body {
 #myQuiz h1.homepage {
 	font-size: 2.5em;
 	font-weight: 500;
-	position: relative;
 }
 
 #myQuiz h1 span {
@@ -52,17 +51,28 @@ body {
 	font-weight: 100;
 }
 
-#myQuiz h2.homepage {
-	font-size: 2em;
-	margin: 25px 0px;
-	font-weight: 100;
-	position: relative;
-}
 
 #myQuiz h3 {
 	font-size: 2.4em;
 	margin: 0px;
 	font-weight: 100;
+}
+
+#myQuiz h4 {
+	font-size: 2em;
+	font-weight: 300;
+	
+}
+
+#myQuiz .select-quiz {
+	position: absolute;
+	font-size: 1.2em;
+	left: 36px;
+	top: 100px;
+}
+
+#myQuiz .btn-home {
+	margin-right:20px;
 }
 
 #myQuiz p {
@@ -289,6 +299,7 @@ body {
 	body {padding: 0px; margin: 0px;}
 	#myQuiz{width:320px; background-size: 320px auto;}
 	#myQuiz h1 {width:300px; font-size: 1.3em; top: 15px; left: 25px;}
+	#myQuiz .select-quiz {width:300px; top: 80px; left: 25px; font-size: 1em;}
 	#myQuiz h1 span {line-height: 25px; font-size: 1.7em;}
 	#myQuiz h2 {margin: 0px;}
 	#myQuiz h3 {font-size: 2.2em; margin-bottom: 15px;}

@@ -1,5 +1,6 @@
-[ 	{
-		"question": "A creamy blend of langostino lobster and cavatappi pasta with Gruyere, American and Parmesan cheeses",
+[ 	
+	{
+		"question": "A creamy blend of langostino lobster and cavatappi pasta with Gruyere, American and Parmesan cheeses.",
 		"answers": [
 			{ "id":0, "text": "Shrimp linguini alfredo"},
 			{ "id":1, "text": "Lobster scampi linguini"},
@@ -8,5 +9,107 @@
 
 		],
 		"correct":2
+	},
+	{
+		"question": "What key-words description belongs to Chilled Lobster and Shrimp Coctail.",
+		"answers": [
+			{ "id":0, "text": "Chilled lobster tails/cocktail shrimp"},
+			{ "id":1, "text": "Sweet lobster tails"},
+			{ "id":2, "text": "Tangy cocktail sauce"},
+			{ "id":3, "text": "All of the above"}
+
+		],
+		"correct":3
+	},
+	{
+		"question": "A refreshing blend of Smirnoff vodka, pureed raspberries, ginger ale and citrus juices.",
+		"answers": [
+			{ "id":0, "text": "Mango Mai Tai"},
+			{ "id":1, "text": "Red Lobster Sunset"},
+			{ "id":2, "text": "Lobster Punch"},
+			{ "id":3, "text": "Malibu Hurricane"}
+			
+		],
+		"correct":1		
+	},
+	{
+		"question": "A refreshing combination of Malibu Red, pinapple juice, mango passion fruit mix topped with Bacardi Black Rum.",
+		"answers": [
+			{ "id":0, "text": "Mai Tai"},
+			{ "id":1, "text": "High Tide"},
+			{ "id":2, "text": "Lobster Punch"},
+			{ "id":3, "text": "Red Lobster Sunset"}
+			
+		],
+		"correct":2
+		
+	},
+	{
+		"question": "Decadent three cheese lobster cream sauce, roasted Maine lobster tails, creamy mac and cheese, savory lobster and seafood stuffing",
+		"answers": [
+			{ "id":0, "text": "Lobster Lover's Dream"},
+			{ "id":1, "text": "Dueling Lobster Tails"},
+			{ "id":2, "text": "Seaport Lobster and Shrimp"},
+			{ "id":3, "text": "Lobster Topped Tilapia"}
+			
+		],
+		"correct":1
+		
+	},
+	{
+		"question": "What key-words description DOES NOT belong to Lobster Lover's Dream.",
+		"answers": [
+			{ "id":0, "text": "Succulent rock lobster tail"},
+			{ "id":1, "text": "Roasted Maine/rock lobster tail"},
+			{ "id":2, "text": "Rich three-cheese mushroom cream sauce"},
+			{ "id":3, "text": "Creamy shrimp and lobster linguini Alfredo"}
+
+		],
+		"correct":2
+	},
+	{
+		"question": "Oak wood-fire grilled fresh tilapia topped with Chilean langostino lobster in a rich creamy three-cheese mushroom cream sauce.",
+		"answers": [
+			{ "id":0, "text": "Rock Island Stuffed Tilapia"},
+			{ "id":1, "text": "Lobster Topped Tilapia"},
+			{ "id":2, "text": "Tilapia New Orleans"},
+			{ "id":3, "text": "Wood-fire Grilled Tilapia Tacos"}
+
+		],
+		"correct":1
+	},
+	{
+		"question": "Oak wood-fire grilled lobster tail, savory shrimp scampi, oak-wood fire grilled garlic shrimp.",
+		"answers": [
+			{ "id":0, "text": "Seaport Lobster and Shrimp"},
+			{ "id":1, "text": "Lobster Lover's Dream"},
+			{ "id":2, "text": "Dueling Lobster Tails"},
+			{ "id":3, "text": "None of the above"}
+
+		],
+		"correct":0
+	},
+	{
+		"question": "Oak wood-fire grilled peppercorn steak, roasted stuffed lobster medallions, Chilean lobster in savory three-cheese mushroom sauce.",
+		"answers": [
+			{ "id":0, "text": "Peppercorn sirloin and shrimp"},
+			{ "id":1, "text": "Steak Oscar"},
+			{ "id":2, "text": "New York Strip and Rock Lobster Tail"},
+			{ "id":3, "text": "Steakhouse Lobster Surf and Turf"}
+
+		],
+		"correct":3
+	},
+	{
+		"question": "A rich and creamy caramel cheesecake topped with fresh bananas infused with spiced rum caramel sauce and topped with cndied pecans.",
+		"answers": [
+			{ "id":0, "text": "Banana Foster Cheesecake"},
+			{ "id":1, "text": "Caramel Cheesecake"},
+			{ "id":2, "text": "New York Style Cheesecake"},
+			{ "id":3, "text": "Banana Split"}
+
+		],
+		"correct":0
 	}
+
 ]
