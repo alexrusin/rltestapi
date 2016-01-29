@@ -8,7 +8,7 @@
 			$scope.activeQuestionAnswer = 0;
 			$scope.percentage = 0;
 
-			$http.get($rootScope.quiz + '.json').then(function(quizData){
+			$http.get('lobsterfest.json').then(function(quizData){
 				$scope.myQuestions = quizData.data;
 				$scope.myQuestions = shuffleSlice($scope.myQuestions);
 				$scope.totalQuestions = $scope.myQuestions.length;
