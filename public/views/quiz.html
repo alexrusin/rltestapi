@@ -1,0 +1,46 @@
+		<h1>Test Your Knowledge: <span>{{quizName}}</span></h1>
+			<div class="progress">
+
+				<div class="{{($index === activeQuestion)? 'on' : 'off'}} 
+				{{(myQuestion.questionState === 'answered') ? 'answered' : 'unanswered'}} 
+				{{(myQuestion.correctness === 'correct') ? 'correct' : 'incorrect'}}" ng-repeat="myQuestion in myQuestions" ></div>
+				
+			</div>
+			<div class="intro {{(activeQuestion >-1) ? 'inactive' : 'active' }}">
+				<h2>Welcome</h2>
+				<p>Click begin to test your knowledge of the {{quizName}}</p>
+				<p class="btn" ng-click="activeQuestion = 0">Begin</p>
+			</div>
+			<div class="question 
+				{{$index === activeQuestion ? 'active' : 'inactive'}}
+				{{myQuestion.questionState === 'answered' ? 'answered' : 'unanswered'}}
+				" ng-repeat="myQuestion in myQuestions">
+				<p class="txt">{{myQuestion.question}}</p>
+				<p class="ans" 
+					ng-class="{
+					image:answer.image,
+					selected:isSelected($parent.$index, $index), correct:isCorrect($parent.$index, $index)}"
+					ng-style="{'background-image':'url({{answer.image}})'}"
+					ng-click="selectAnswer($parent.$index, $index)"
+					ng-repeat="answer in myQuestions[$index].answers">
+
+					{{answer.text}}
+
+				</p>
+				
+				<div class="feedback">
+					<p ng-show="myQuestion.correctness === 'correct'">You are <strong>correct</strong></p>
+					<p ng-show="myQuestion.correctness === 'incorrect'">Sorry, that is <strong>not correct</strong></p>
+					<p>{{myQuestion.feedback}}</p>
+					<div class="btn" ng-click = "selectContinue()">Continue</div>
+				</div>
+			</div>
+			<div class="results {{(totalQuestions === activeQuestion) ? 'active' : 'inactive'}}">
+				<h3>Results</h3>
+				<p>You scored {{percentage}}% by correctly answering {{score}} of total {{totalQuestions}} questions</p>
+				<p>Use the links below to challenge your friends</p>
+				<div class="share" ng-bind-html="createShareLinks(percentage)"></div>
+
+				<a href="#/" class="btn">Back to Select Quiz page</a>
+
+			</div>
