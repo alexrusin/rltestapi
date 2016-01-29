@@ -2,13 +2,13 @@
 
 	angular.module('myQuiz').controller('QuizController', [ '$rootScope', '$scope', '$http', '$sce', '$window', 
 		function($rootScope, $scope, $http, $sce, $window){
-			$scope.quizName = $rootScope.quiz;
+			var quizName = $rootScope.quiz.toLowerCase();
 			$scope.score = 0;
 			$scope.activeQuestion = -1;
 			$scope.activeQuestionAnswer = 0;
 			$scope.percentage = 0;
 
-			$http.get('lobsterfest.json').then(function(quizData){
+			$http.get(quizName + '.json').then(function(quizData){
 				$scope.myQuestions = quizData.data;
 				$scope.myQuestions = shuffleSlice($scope.myQuestions);
 				$scope.totalQuestions = $scope.myQuestions.length;

@@ -1,4 +1,4 @@
-		<h1>Test Your Knowledge: <span>{{quizName}}</span></h1>
+		<h1>Test Your Knowledge: <span>{{quiz}}</span></h1>
 			<div class="progress">
 
 				<div class="{{($index === activeQuestion)? 'on' : 'off'}} 
@@ -8,7 +8,7 @@
 			</div>
 			<div class="intro {{(activeQuestion >-1) ? 'inactive' : 'active' }}">
 				<h2>Welcome</h2>
-				<p>Click begin to test your knowledge of the {{quizName}}</p>
+				<p>Click begin to test your knowledge of the {{quiz}}</p>
 				<p class="btn" ng-click="activeQuestion = 0">Begin</p>
 			</div>
 			<div class="question 
