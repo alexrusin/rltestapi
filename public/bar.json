@@ -248,5 +248,26 @@
 			
 		],
 		"correct":1
+	},
+	{
+		"question": "Our well whiskey is ______",
+		"answers": [
+			{ "id":0, "text": "Early Times"},
+			{ "id":1, "text": "Jack Daniel's"},
+			{ "id":2, "text": "Jim Beam"},
+			{ "id":3, "text": "Segram's 7"}
+			
+		],
+		"correct":2
+	},
+	{
+		"question": "Our well whiskey is a bourbon",
+		"answers": [
+			{ "id":0, "text": "True"},
+			{ "id":1, "text": "False"}
+						
+		],
+		"correct":1,
+		"feedback":"Bourbon whiskey is an American whiskey made from at least 51% of corn"
 	}
 ]

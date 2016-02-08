@@ -5,13 +5,13 @@
 			{ "id":0, "text": "Shrimp linguini alfredo"},
 			{ "id":1, "text": "Lobster scampi linguini"},
 			{ "id":2, "text": "Lobster mac and cheese"},
-			{ "id":3, "text": "Crab linguini alfredo"}
+			{ "id":3, "text": "Shrimp and lobster linguini alfredo"}
 
 		],
 		"correct":2
 	},
 	{
-		"question": "What key-words description belongs to Chilled Lobster and Shrimp Coctail.",
+		"question": "What key-words description belongs to Chilled Lobster and Shrimp Coctail?",
 		"answers": [
 			{ "id":0, "text": "Chilled lobster tails/cocktail shrimp"},
 			{ "id":1, "text": "Sweet lobster tails"},
@@ -57,7 +57,7 @@
 		
 	},
 	{
-		"question": "What key-words description DOES NOT belong to Lobster Lover's Dream.",
+		"question": "What key-words description DOES NOT belong to Lobster Lover's Dream?",
 		"answers": [
 			{ "id":0, "text": "Succulent rock lobster tail"},
 			{ "id":1, "text": "Roasted Maine/rock lobster tail"},
@@ -101,7 +101,7 @@
 		"correct":3
 	},
 	{
-		"question": "A rich and creamy caramel cheesecake topped with fresh bananas infused with spiced rum caramel sauce and topped with cndied pecans.",
+		"question": "A rich and creamy caramel cheesecake topped with fresh bananas, infused with spiced rum caramel sauce, and topped with cndied pecans.",
 		"answers": [
 			{ "id":0, "text": "Banana Foster Cheesecake"},
 			{ "id":1, "text": "Caramel Cheesecake"},
