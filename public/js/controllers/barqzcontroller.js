@@ -1,25 +1,14 @@
 (function(){
 
-<<<<<<< HEAD
-	angular.module('myQuiz').controller('QuizController', [ '$rootScope', '$scope', '$http', '$sce', '$window', 
-		function($rootScope, $scope, $http, $sce, $window){
-			var quizName = $rootScope.quiz.toLowerCase();
-=======
-	angular.module('myQuiz').controller('QuizController', ['$rootScope', '$scope', '$sce', '$window', 'QuizFactory',
+angular.module('myQuiz').controller('QuizController', ['$rootScope', '$scope', '$sce', '$window', 'QuizFactory',
 		function($rootScope, $scope, $sce, $window, QuizFactory){
 			$scope.quizName = $rootScope.quiz;
->>>>>>> refactor
 			$scope.score = 0;
 			$scope.activeQuestion = -1;
 			$scope.activeQuestionAnswer = 0;
 			$scope.percentage = 0;
 
-<<<<<<< HEAD
-			$http.get(quizName + '.json').then(function(quizData){
-				$scope.myQuestions = quizData.data;
-				$scope.myQuestions = shuffleSlice($scope.myQuestions);
-				$scope.totalQuestions = $scope.myQuestions.length;
-=======
+
 			QuizFactory.getQuestions($scope.quizName, function(data){
 				if (data === 'error'){
 					$scope.quizName = "Sorry, could not retrieve quiz data";
@@ -27,7 +16,6 @@
 					$scope.myQuestions = data;
 					$scope.totalQuestions = $scope.myQuestions.length;
 				}
->>>>>>> refactor
 			});
 
 			$scope.selectAnswer = function(qIndex, aIndex){
