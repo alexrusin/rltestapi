@@ -1,17 +1,20 @@
 (function(){
 
-	angular.module('myQuiz').controller('QuizController', [ '$rootScope', '$scope', '$http', '$sce', '$window', 
-		function($rootScope, $scope, $http, $sce, $window){
+	angular.module('myQuiz').controller('QuizController', ['$rootScope', '$scope', '$http', '$sce', '$window', 'QuizFactory',
+		function($rootScope, $scope, $http, $sce, $window, QuizFactory){
 			$scope.quizName = $rootScope.quiz;
 			$scope.score = 0;
 			$scope.activeQuestion = -1;
 			$scope.activeQuestionAnswer = 0;
 			$scope.percentage = 0;
 
-			$http.get($rootScope.quiz + '.json').then(function(quizData){
-				$scope.myQuestions = quizData.data;
-				$scope.myQuestions = shuffleSlice($scope.myQuestions);
-				$scope.totalQuestions = $scope.myQuestions.length;
+			QuizFactory.getQuestions($scope.quizName, function(data){
+				if (data === 'error'){
+					$scope.quizName = "Sorry, could not retrieve quiz data";
+				} else {
+					$scope.myQuestions = data;
+					$scope.totalQuestions = $scope.myQuestions.length;
+				}
 			});
 
 			$scope.selectAnswer = function(qIndex, aIndex){
@@ -67,28 +70,7 @@
 				
 			}
 
-			function shuffleSlice(array) {
-  				var currentIndex = array.length, temporaryValue, randomIndex;
-
-  				// While there remain elements to shuffle...
-  				while (0 !== currentIndex) {
-
-    			// Pick a remaining element...
-			    randomIndex = Math.floor(Math.random() * currentIndex);
-			    currentIndex -= 1;
-
-			    // And swap it with the current element.
-			    temporaryValue = array[currentIndex];
-			    array[currentIndex] = array[randomIndex];
-			    array[randomIndex] = temporaryValue;
-			  	}
-
-			  	if(array.length>20){
-			  		array=array.slice(0, 20);
-			  	}
-
-			  return array;
-			}
+			
 
 
 		}]);
