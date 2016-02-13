@@ -1,7 +1,7 @@
 (function(){
 
-	angular.module('myQuiz').controller('QuizController', ['$rootScope', '$scope', '$window', 'QuizFactory',
-		function($rootScope, $scope, $window, QuizFactory){
+	angular.module('myQuiz').controller('QuizController', ['$rootScope', '$scope', '$sce', '$window', 'QuizFactory',
+		function($rootScope, $scope, $sce, $window, QuizFactory){
 			$scope.quizName = $rootScope.quiz;
 			$scope.score = 0;
 			$scope.activeQuestion = -1;
@@ -54,9 +54,10 @@
 			}
 
 			$scope.createShareLinks = function(percentage){
-				QuizFactory.createShareLinks(percentage, $scope.quizName);
 
-			}	
+				return $sce.trustAsHtml(QuizFactory.shareLinks(percentage, $scope.quizName));
+
+			}		
 
 			$scope.retakeQuiz = function(){
 				$rootScope.quiz = $scope.quizName;
