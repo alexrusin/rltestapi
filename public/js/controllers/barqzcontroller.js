@@ -54,7 +54,7 @@ angular.module('myQuiz').controller('QuizController', ['$rootScope', '$scope', '
 				return $scope.activeQuestion += 1;
 			}
 
-			$scope.shareLinks = function(percentage){
+			$scope.createShareLinks = function(percentage){
 				
 
 				return $sce.trustAsHtml(QuizFactory.shareLinks(percentage, $scope.quizName));
