@@ -1,17 +1,33 @@
 (function(){
 
+<<<<<<< HEAD
 	angular.module('myQuiz').controller('QuizController', [ '$rootScope', '$scope', '$http', '$sce', '$window', 
 		function($rootScope, $scope, $http, $sce, $window){
 			var quizName = $rootScope.quiz.toLowerCase();
+=======
+	angular.module('myQuiz').controller('QuizController', ['$rootScope', '$scope', '$sce', '$window', 'QuizFactory',
+		function($rootScope, $scope, $sce, $window, QuizFactory){
+			$scope.quizName = $rootScope.quiz;
+>>>>>>> refactor
 			$scope.score = 0;
 			$scope.activeQuestion = -1;
 			$scope.activeQuestionAnswer = 0;
 			$scope.percentage = 0;
 
+<<<<<<< HEAD
 			$http.get(quizName + '.json').then(function(quizData){
 				$scope.myQuestions = quizData.data;
 				$scope.myQuestions = shuffleSlice($scope.myQuestions);
 				$scope.totalQuestions = $scope.myQuestions.length;
+=======
+			QuizFactory.getQuestions($scope.quizName, function(data){
+				if (data === 'error'){
+					$scope.quizName = "Sorry, could not retrieve quiz data";
+				} else {
+					$scope.myQuestions = data;
+					$scope.totalQuestions = $scope.myQuestions.length;
+				}
+>>>>>>> refactor
 			});
 
 			$scope.selectAnswer = function(qIndex, aIndex){
@@ -50,45 +66,22 @@
 				return $scope.activeQuestion += 1;
 			}
 
-			$scope.createShareLinks = function(percentage){
-				var url = 'http://rusin-barqz.herokuapp.com/';
-				//var emailLink = '<a class="btn email" href="mailto:?subject=Try to beat my quiz score!&amp;body=I scored '+percentage+'% on this quiz. Try to beat my score at '+url+'">Email</a>';
-				var twitterLink = '<a class="btn twitter" target = "_blank" href="http://twitter.com/share?text=I scored '+percentage+' on '+$scope.quizName+' quiz. Try to beat my score at&hashTags=BarQuiz&url='+url+'">Tweet your score</a>';
-				var facebookLink = '<a class="btn facebook" target = "_blank" href="https://www.facebook.com/sharer/sharer.php?u='+url+'">Share on Facebook</a>';;
-				var newMarkup = twitterLink + facebookLink;
+			$scope.shareLinks = function(percentage){
+<<<<<<< HEAD
+				>>>>>>> refactor
 
-				return $sce.trustAsHtml(newMarkup);
+				return $sce.trustAsHtml(QuizFactory.shareLinks(percentage, $scope.quizName));
 
-			}	
+			}		
 
 			$scope.retakeQuiz = function(){
 				$rootScope.quiz = $scope.quizName;
 				$window.location.reload();
+
 				
 			}
 
-			function shuffleSlice(array) {
-  				var currentIndex = array.length, temporaryValue, randomIndex;
-
-  				// While there remain elements to shuffle...
-  				while (0 !== currentIndex) {
-
-    			// Pick a remaining element...
-			    randomIndex = Math.floor(Math.random() * currentIndex);
-			    currentIndex -= 1;
-
-			    // And swap it with the current element.
-			    temporaryValue = array[currentIndex];
-			    array[currentIndex] = array[randomIndex];
-			    array[randomIndex] = temporaryValue;
-			  	}
-
-			  	if(array.length>20){
-			  		array=array.slice(0, 20);
-			  	}
-
-			  return array;
-			}
+			
 
 
 		}]);
