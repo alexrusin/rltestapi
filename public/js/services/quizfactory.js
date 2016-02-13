@@ -6,7 +6,7 @@
 				$http.get(whichquiz + '.json').success(function(quizData){
 				var myQuestions = shuffleSlice(quizData);
 				return callback(myQuestions);
-			}).error(function(err){
+			}).error(function(){
 				return callback('error');
 			});
 
