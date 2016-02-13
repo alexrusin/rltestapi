@@ -67,8 +67,7 @@
 			}
 
 			$scope.shareLinks = function(percentage){
-<<<<<<< HEAD
-				>>>>>>> refactor
+				
 
 				return $sce.trustAsHtml(QuizFactory.shareLinks(percentage, $scope.quizName));
 
