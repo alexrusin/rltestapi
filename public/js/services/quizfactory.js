@@ -12,6 +12,16 @@
 
 			}
 
+			factory.getQuizes = function(apicall, callback) {
+				$http.get(apicall).success(function(quizData){
+				
+				return callback(quizData);
+			}).error(function(){
+				return callback('error');
+			});
+
+			}
+
 			function shuffleSlice(array) {
 				var currentIndex = array.length,
 					temporaryValue, randomIndex;

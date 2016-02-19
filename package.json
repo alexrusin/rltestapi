@@ -5,12 +5,16 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"start":"node app.js"
+    "start": "node app.js"
   },
   "author": "Alex Rusin",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "cors": "^2.7.1",
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "mysql": "^2.10.2",
+    "sequelize": "^3.19.2",
+    "underscore": "^1.8.3"
   }
 }

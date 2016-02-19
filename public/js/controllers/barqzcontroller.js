@@ -1,15 +1,16 @@
 (function(){
 
-angular.module('myQuiz').controller('QuizController', ['$rootScope', '$scope', '$sce', '$window', 'QuizFactory',
-		function($rootScope, $scope, $sce, $window, QuizFactory){
-			$scope.quizName = $rootScope.quiz;
+angular.module('myQuiz').controller('QuizController', 
+	['$rootScope', '$scope', '$sce', '$window', '$routeParams', 'QuizFactory',
+		function($rootScope, $scope, $sce, $window, $routeParams, QuizFactory){
 			$scope.score = 0;
 			$scope.activeQuestion = -1;
 			$scope.activeQuestionAnswer = 0;
 			$scope.percentage = 0;
+			apiUrl = "/api/quizes/" + $routeParams.quizId
+			$scope.quizName=$routeParams.quizName;
 
-
-			QuizFactory.getQuestions($scope.quizName, function(data){
+			QuizFactory.getQuestions(apiUrl, function(data){
 				if (data === 'error'){
 					$scope.quizName = "Sorry, could not retrieve quiz data";
 				} else {

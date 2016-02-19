@@ -8,7 +8,7 @@
                 controller: 'SelectQuizController',
                 templateUrl: 'views/selectquiz.html'
             })
-            .when('/quiz', {
+            .when('/quiz/:quizId/:quizName', {
                 controller: 'QuizController',
                 templateUrl: 'views/quiz.html'
             })
