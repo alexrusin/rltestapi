@@ -10,6 +10,7 @@ var db = {};
 db.quiz = sequelize.import(__dirname + '/models/quiz.js');
 db.question = sequelize.import(__dirname + '/models/question.js');
 db.answer = sequelize.import(__dirname + '/models/answer.js');
+db.tipshare = sequelize.import(__dirname + '/models/tipshare.js');
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 

@@ -11,6 +11,11 @@ var PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(cors());
 app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+app.use(function(req, res, next) {
 	console.log(`${req.method} request for '${req.url}'`);
 	next();
 });
@@ -40,7 +45,6 @@ app.get('/api/quizes', function(req, res) {
 	}).catch(function(e) {
 		res.status(400).json(e);
 	});
-
 
 });
 
@@ -102,6 +106,34 @@ app.get('/api/quizes/:id', function(req, res) {
 	});
 
 });
+
+app.post('/api/tipshare', function(req, res) {
+	var body = _.pick(req.body, 'title', 'author', 'article', 'active');
+	db.tipshare.create(body).then(function(tipshare) {
+		res.json(tipshare.toJSON());
+	}).catch(function(e) {
+		res.status(400).json(e);
+	});
+});
+
+app.get('/api/tipshare', function(req, res) {
+	var tipshares = [];
+	db.tipshare.findAll({
+		where: {
+			active: true
+		}
+	}).then(function(items) {
+		items.forEach(function(item) {
+			tipshares.push(item);
+		});
+		res.status(200).json(tipshares);
+	}).catch(function(e) {
+		res.status(400).json(e);
+	});
+
+});
+
+
 
 db.sequelize.sync().then(function() {
 	app.listen(PORT, function() {

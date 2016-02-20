@@ -2,17 +2,8 @@
 	angular.module('myQuiz').factory('QuizFactory', ['$http', 
 		function($http) {
 			var factory = {};
-			factory.getQuestions = function(whichquiz, callback) {
-				$http.get(whichquiz + '.json').success(function(quizData){
-				var myQuestions = shuffleSlice(quizData);
-				return callback(myQuestions);
-			}).error(function(){
-				return callback('error');
-			});
-
-			}
-
-			factory.getQuizes = function(apicall, callback) {
+			
+			factory.getQuizData = function(apicall, callback) {
 				$http.get(apicall).success(function(quizData){
 				
 				return callback(quizData);
@@ -22,7 +13,7 @@
 
 			}
 
-			function shuffleSlice(array) {
+			factory.shuffleSlice = function(array) {
 				var currentIndex = array.length,
 					temporaryValue, randomIndex;
 

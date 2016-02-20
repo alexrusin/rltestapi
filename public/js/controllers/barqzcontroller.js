@@ -10,11 +10,11 @@ angular.module('myQuiz').controller('QuizController',
 			apiUrl = "/api/quizes/" + $routeParams.quizId
 			$scope.quizName=$routeParams.quizName;
 
-			QuizFactory.getQuestions(apiUrl, function(data){
+			QuizFactory.getQuizData(apiUrl, function(data){
 				if (data === 'error'){
 					$scope.quizName = "Sorry, could not retrieve quiz data";
 				} else {
-					$scope.myQuestions = data;
+					$scope.myQuestions = QuizFactory.shuffleSlice(data);
 					$scope.totalQuestions = $scope.myQuestions.length;
 				}
 			});
