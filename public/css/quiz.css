@@ -109,14 +109,14 @@ body {
 }
 
 /* Progress Bar */
-#myQuiz .progress {
+#myQuiz .progress-b {
 	width: 550px;
 	position: absolute;
 	top: 145px;
 	left: 40px;
 }
 
-#myQuiz .progress div {
+#myQuiz .progress-b div {
 	position: relative;
 	display: inline-block;
 	width: 30px;
@@ -129,7 +129,7 @@ body {
 
 }
 
-#myQuiz .progress div::after {
+#myQuiz .progress-b div::after {
 	content: '';
 	display: block;
 	position: absolute;
@@ -142,11 +142,11 @@ body {
 	opacity: 0;
 }
 
-#myQuiz .progress div.on, #myQuiz .progress div.answered{
+#myQuiz .progress-b div.on, #myQuiz .progress-b div.answered{
 	background-color: #efbe5e;
 }
 
-#myQuiz .progress div.correct::after{
+#myQuiz .progress-b div.correct::after{
 	top: -12px;
 	left: -3px;
 	opacity: 1;
@@ -330,9 +330,9 @@ body {
 	#myQuiz h3 {font-size: 2.2em; margin-bottom: 15px;}
 
 	#myQuiz .btn-home {margin-top:20px;}
-	#myQuiz .progress {width: 300px; top: 80px; left: 25px;}
-	#myQuiz .progress div {width: 20px; height: 20px; margin-right: 10px;}
-	#myQuiz .progress div::after { top: -30px; width: 40px; height: 28px;}
+	#myQuiz .progress-b {width: 300px; top: 80px; left: 25px;}
+	#myQuiz .progress-b div {width: 20px; height: 20px; margin-right: 10px;}
+	#myQuiz .progress-b div::after { top: -30px; width: 40px; height: 28px;}
 	#myQuiz .intro {width: 300px; top: 135px; left:330px;}
 
 	#myQuiz .question {width: 300px; top: 135px; left: 330px;}

@@ -1,4 +1,3 @@
-
 <div id="myForm">
 	<div class="textintro">
       <h3>Hi there!</h3>
@@ -33,10 +32,10 @@
             <label>Article</label>
             <text-angular type="text" name="article"
             	ng-model="myform.article"
-                ng-minlength="2"
+                ng-minlength="300"
                 required></text-angular>
                 
-           <p class= "error" ng-show ="tipShareForm.article.$invalid && tipShareForm.article.$touched">Article is required. Must be at least 100 characters long.</p>
+           <p class= "error" ng-show ="tipShareForm.article.$invalid && tipShareForm.article.$touched">Article is required. Must be at least 300 characters long.</p>
         </div>
         	<p>{{feedback}}</p>
 
