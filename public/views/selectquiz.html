@@ -1,11 +1,13 @@
-<h1 class="homepage">Test Your Knowledge</h1>
+<div id="myQuiz">
+	<h1 class="homepage">Test Your Knowledge</h1>
 
-<div class="select-quiz">
+	<div class="select-quiz">
 
 
-<h4> Please select a quiz</h2>
-	
+	<h4> Please select a quiz</h2>
+		
 
-<a ng-repeat="quiz in quizes" ng-href="#/quiz/{{quiz.id}}/{{quiz.name}}" class="btn btn-home">{{quiz.name}} Quiz</a>
+	<a ng-repeat="quiz in quizes" ng-href="#/quiz/{{quiz.id}}/{{quiz.name}}" class="btn btn-home">{{quiz.name}} Quiz</a>
 
+	</div>
 </div>

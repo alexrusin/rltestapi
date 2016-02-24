@@ -23,6 +23,25 @@ body {
 	box-shadow: 19px 22px 19px 0px rgba(0,0,0,0.77);
 }
 
+#myForm {
+	font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 400;
+   width: 800px;  
+   background-color: #e6e6e6;
+   position: relative;
+   margin-top:50px;
+   margin-right: auto;
+   margin-left: auto;
+   padding:20px 50px;
+   -webkit-box-shadow: 19px 22px 19px 0px rgba(0,0,0,0.77);
+   -moz-box-shadow: 19px 22px 19px 0px rgba(0,0,0,0.77);
+	box-shadow: 19px 22px 19px 0px rgba(0,0,0,0.77);
+
+}
+.textintro {
+	text-align: center;
+
+}
+
 #myQuiz h1 {
 	font-weight: 100;
 	font-size: 2em;
@@ -293,6 +312,12 @@ body {
 
 #myQuiz .intro.inactive, #myQuiz .inactive.answered {
 	left: -1350px;
+}
+
+
+.error {
+  color: red;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 650px){

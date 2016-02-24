@@ -1,6 +1,6 @@
 (function(){
 
-	var app = angular.module('myQuiz',['ngRoute']);
+	var app = angular.module('myQuiz',['ngRoute', 'textAngular']);
 
 	app.config(function($routeProvider) {
         $routeProvider
@@ -11,6 +11,10 @@
             .when('/quiz/:quizId/:quizName', {
                 controller: 'QuizController',
                 templateUrl: 'views/quiz.html'
+            })
+            .when('/tipshare', {
+                controller: 'FormController',
+                templateUrl: 'views/tipshareform.html'
             })
             .otherwise( { redirectTo: '/' } );
     });

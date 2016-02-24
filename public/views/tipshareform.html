@@ -1,0 +1,51 @@
+
+<div id="myForm">
+	<div class="textintro">
+      <h3>Hi there!</h3>
+      <p>This is the form to submit your Tip Share articles. We appreciate your contribution! </p>
+     </div>
+	<form name="tipShareForm"  novalidate>
+
+	
+        
+        <!-- Title field -->
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" name="title" class="form-control" 
+                ng-model="myform.title"
+                ng-minlength="5"
+                required>
+                
+           <p class= "error" ng-show ="tipShareForm.title.$invalid && tipShareForm.title.$touched">Arcticle name is required.  Must be at least 5 characters long.</p>
+        </div>
+
+        <!-- Title field -->
+        <div class="form-group">
+            <label>Author</label>
+            <input type="text" name="author" class="form-control" 
+                ng-model="myform.author"
+                required>
+                
+          <p class= "error" ng-show ="tipShareForm.author.$invalid && tipShareForm.author.$touched">Author's name is required.</p>
+        </div>
+        
+        <div class="form-group">
+            <label>Article</label>
+            <text-angular type="text" name="article"
+            	ng-model="myform.article"
+                ng-minlength="2"
+                required></text-angular>
+                
+           <p class= "error" ng-show ="tipShareForm.article.$invalid && tipShareForm.article.$touched">Article is required. Must be at least 100 characters long.</p>
+        </div>
+        	<p>{{feedback}}</p>
+
+        
+        <div class="form-group">
+            <button  class="btn btn-primary" ng-disabled = "tipShareForm.$invalid" ng-click="submitForm()">Submit</button>
+        </div>
+        
+    </form>
+    
+
+</div>
