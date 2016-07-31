@@ -1,7 +1,7 @@
 var Sequelize = require('sequelize');
 
-var sequelize = new Sequelize('rlquiz', 'rlquiz', 'RedLobster5@5', {
-	host: 'rlquiz.db.6916433.hostedresource.com',
+var sequelize = new Sequelize('quiz', 'quiz', 'Password', {
+	host: 'lc',
 	dialect: 'mysql',
 });
 

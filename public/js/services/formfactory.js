@@ -4,7 +4,7 @@
 			var factory = {};
 			
 			factory.submitForm = function(formdata, callback){
-				$http.post("/api/tipshare", formdata).success(function(res){
+				$http.post("/rlquiz/api/tipshare", formdata).success(function(res){
 				
 				return callback(res);
 			}).error(function(){

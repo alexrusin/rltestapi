@@ -5,7 +5,6 @@ var bodyParser = require("body-parser");
 var db = require("./db.js");
 
 var app = express();
-var PORT = process.env.PORT || 3000;
 
 
 app.use(bodyParser.json());
@@ -21,6 +20,7 @@ app.use(function(req, res, next) {
 });
 
 app.use(express.static("./public"));
+
 
 app.post('/api/quizes', function(req, res) {
 	var body = _.pick(req.body, 'name', 'active');
@@ -135,11 +135,7 @@ app.get('/api/tipshare', function(req, res) {
 
 
 
-db.sequelize.sync().then(function() {
-	app.listen(PORT, function() {
-		console.log('Express listening on port ' + PORT + '!');
-	});
-});
+
 
 
 

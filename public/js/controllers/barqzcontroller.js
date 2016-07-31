@@ -7,7 +7,7 @@ angular.module('myQuiz').controller('QuizController',
 			$scope.activeQuestion = -1;
 			$scope.activeQuestionAnswer = 0;
 			$scope.percentage = 0;
-			apiUrl = "/api/quizes/" + $routeParams.quizId
+			apiUrl = "/rlquiz/api/quizes/" + $routeParams.quizId
 			$scope.quizName=$routeParams.quizName;
 
 			QuizFactory.getQuizData(apiUrl, function(data){
