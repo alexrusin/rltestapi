@@ -5,7 +5,7 @@ var db = require('./db.js');
 
 var app = express();
 
-// Serve the Parse API on the /parse URL prefix
+// Serve the serve api on /rlquiz prefix URL prefix
 app.use(express.static("./public"));
 app.use('/rlquiz', application);
 
